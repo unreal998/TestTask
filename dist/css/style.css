@@ -1,0 +1,885 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1%;
+  margin-top: 1%; }
+  header .leftSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%; }
+    header .leftSide ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding-left: 3%; }
+      header .leftSide ul li {
+        padding-right: 1%;
+        margin-right: 1%;
+        width: 100%;
+        font-size: 80%; }
+        header .leftSide ul li a {
+          text-decoration: none;
+          color: #893b67;
+          font-family: "Vida 31 Pro",sans-serif;
+          font-weight: bolder; }
+  header .rightSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    justify-content: flex-end; }
+    header .rightSide #comparison {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 3%; }
+      header .rightSide #comparison #comprVal {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin-right: 10%;
+        justify-content: flex-end; }
+        header .rightSide #comparison #comprVal span {
+          position: absolute;
+          align-self: flex-start;
+          font-size: 60%;
+          justify-self: flex-end;
+          background-color: #893b67;
+          color: white;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 0.8%;
+          font-family: "Vida 33 Pro",sans-serif;
+          padding: 0.1%; }
+        header .rightSide #comparison #comprVal img {
+          display: block;
+          color: #893b67;
+          margin: 40%;
+          box-sizing: border-box; }
+        header .rightSide #comparison #comprVal img:hover {
+          cursor: pointer; }
+    header .rightSide p {
+      color: #893b67;
+      font-family: "Vida 31 Pro",sans-serif;
+      margin-right: 2%;
+      font-size: 72%; }
+    header .rightSide #btn_Cab {
+      border-radius: 14px;
+      border: 1px solid #53565a2a;
+      width: 30%;
+      display: flex;
+      align-items: center; }
+      header .rightSide #btn_Cab p {
+        width: 100%;
+        margin: 0;
+        padding: 5%; }
+      header .rightSide #btn_Cab img {
+        padding: 6%; }
+      header .rightSide #btn_Cab img:hover {
+        cursor: pointer; }
+    header .rightSide #btn_Cab:hover {
+      border: 1px solid #53565a; }
+    header .rightSide #num {
+      font-size: 95%;
+      font-family: "Vida 33 Pro",sans-serif;
+      color: #565f66;
+      margin-left: 1%; }
+    header .rightSide #call {
+      margin: 0; }
+    header .rightSide #call:hover {
+      cursor: pointer; }
+  header #burger {
+    display: none; }
+  header .burgerMenu {
+    display: none; }
+
+.bg {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end; }
+  .bg #bgText {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-end;
+    margin-left: 7%; }
+    .bg #bgText h1 {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10%;
+      padding-bottom: 1%;
+      padding-top: 5%;
+      width: 100%;
+      font-size: 250%;
+      color: #414141;
+      font-family: "Vida 33 Pro",sans-serif; }
+    .bg #bgText h5 {
+      background-color: white;
+      width: 35%;
+      padding: 10%;
+      padding-bottom: 0%;
+      padding-top: 3%;
+      display: flex;
+      align-items: center;
+      color: #777b80;
+      justify-content: flex-start;
+      font-family: "Vida 33 Pro",sans-serif; }
+  .bg img {
+    width: 100%; }
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5%; }
+  .main #menu {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1%; }
+    .main #menu #menuSide {
+      display: flex;
+      flex-direction: column; }
+      .main #menu #menuSide a {
+        margin: 10%;
+        color: #893b67;
+        font-family: "Vida 31 Pro",sans-serif;
+        text-decoration: none; }
+      .main #menu #menuSide #notice {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        border-radius: 14px;
+        border: 1px solid #53565a2a;
+        width: 140%;
+        flex-direction: row;
+        margin: 10%;
+        margin-left: 5%; }
+        .main #menu #menuSide #notice .menuSidemini {
+          display: none; }
+        .main #menu #menuSide #notice div {
+          width: 100%;
+          display: flex;
+          justify-content: space-between; }
+          .main #menu #menuSide #notice div .noticeBarSide {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0%;
+            margin-left: 5%;
+            width: 100%;
+            margin: 0%; }
+            .main #menu #menuSide #notice div .noticeBarSide #noticeBar {
+              font-size: 90%;
+              color: #53565a;
+              margin: 5%; }
+            .main #menu #menuSide #notice div .noticeBarSide span {
+              font-size: 70%;
+              background-color: #893b67;
+              border-radius: 100%;
+              display: flex;
+              align-self: flex-start;
+              width: 6%;
+              justify-content: center;
+              margin: -3%;
+              color: white;
+              font-family: "Vida 33 Pro",sans-serif;
+              padding: 0.5%; }
+          .main #menu #menuSide #notice div img {
+            display: none; }
+        .main #menu #menuSide #notice #notice:hover {
+          border: 1px solid #53565a;
+          cursor: pointer; }
+      .main #menu #menuSide hr {
+        margin: 15%;
+        width: 180%;
+        opacity: 0.2; }
+      .main #menu #menuSide #LeftSideBar {
+        display: flex;
+        justify-content: center;
+        margin: 10%;
+        width: 180%;
+        flex-direction: column; }
+        .main #menu #menuSide #LeftSideBar h3 {
+          font-family: "Vida 33 Pro",sans-serif;
+          color: #893b67; }
+        .main #menu #menuSide #LeftSideBar div {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 5%; }
+          .main #menu #menuSide #LeftSideBar div p {
+            font-family: "Vida 31 Pro",sans-serif; }
+          .main #menu #menuSide #LeftSideBar div a {
+            margin: 0;
+            display: flex;
+            justify-content: space-between; }
+            .main #menu #menuSide #LeftSideBar div a img {
+              margin-left: 10%; }
+  .main #content {
+    width: 60%;
+    margin-left: 11%;
+    border-left: 1px solid #00000012;
+    margin-top: 2%; }
+    .main #content #MainContent {
+      display: flex;
+      margin-left: 5%;
+      flex-direction: column; }
+      .main #content #MainContent h2 {
+        font-family: "Vida 33 Pro",sans-serif;
+        color: #414141;
+        font-weight: normal;
+        margin-bottom: 5%; }
+      .main #content #MainContent article {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #00000012;
+        border-radius: 14px;
+        justify-content: center;
+        padding: 2%;
+        align-items: flex-start;
+        margin-bottom: 5%; }
+        .main #content #MainContent article h5 {
+          font-family: "Vida 31 Pro",sans-serif;
+          font-size: 90%;
+          background-color: #edeeee;
+          font-weight: normal;
+          margin-top: 1%;
+          margin-bottom: 2%; }
+        .main #content #MainContent article nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%; }
+          .main #content #MainContent article nav h4 {
+            font-family: "Vida 33 Pro",sans-serif;
+            font-size: 90%;
+            margin-bottom: 1%; }
+          .main #content #MainContent article nav img {
+            cursor: pointer; }
+          .main #content #MainContent article nav #slideUp {
+            display: flex; }
+          .main #content #MainContent article nav #slideDown {
+            display: none; }
+        .main #content #MainContent article p {
+          width: 90%;
+          display: none; }
+      .main #content #MainContent .active p {
+        display: flex; }
+      .main #content #MainContent .active #slideDown {
+        display: flex; }
+      .main #content #MainContent .active #slideUp {
+        display: none; }
+
+.undermain {
+  display: flex;
+  background-color: #53565a1a;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 4%; }
+  .undermain article {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 1%; }
+    .undermain article h5 {
+      display: flex;
+      align-items: center;
+      font-family: "Vida 31 Pro",sans-serif;
+      margin-bottom: 4%;
+      color: #909090;
+      font-weight: normal; }
+      .undermain article h5 #activeP {
+        background: url("../img/greenbBg.jpg") no-repeat;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        font-family: "Vida 33 Pro";
+        padding: 0.8%; }
+      .undermain article h5 p {
+        margin-left: 2%;
+        font-family: "Vida 31 Pro";
+        font-size: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
+        background-color: white;
+        padding: 3%;
+        border-radius: 2px;
+        font-weight: normal; }
+  .undermain .slider {
+    display: none; }
+    .undermain .slider p {
+      font-family: "Vida 31 Pro"; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 4%; }
+  footer #leftFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 25%;
+    margin-left: 5%; }
+    footer #leftFooter nav {
+      display: flex;
+      align-items: center; }
+      footer #leftFooter nav a {
+        margin-right: 30%; }
+    footer #leftFooter h2 {
+      font-family: "Vida 33 Pro";
+      color: #424242;
+      font-weight: normal;
+      margin-top: 15%; }
+    footer #leftFooter h5 {
+      font-family: "Vida 31 Pro";
+      color: #424242;
+      margin-top: 2%; }
+    footer #leftFooter p {
+      margin-top: 2%;
+      color: #893b67;
+      font-family: "Vida 31 Pro";
+      font-weight: bold; }
+  footer #rightFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 60%;
+    margin-right: 5%; }
+    footer #rightFooter .slideUl {
+      display: none; }
+    footer #rightFooter ul {
+      display: flex;
+      flex-direction: column; }
+      footer #rightFooter ul h3 {
+        margin-bottom: 15%;
+        font-family: "Vida 33 Pro"; }
+      footer #rightFooter ul img {
+        display: none; }
+      footer #rightFooter ul li {
+        list-style: none;
+        font-family: "Vida 31 Pro";
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex; }
+        footer #rightFooter ul li a {
+          text-decoration: none;
+          color: #893b67; }
+
+@media screen and (max-width: 988px) and (min-width: 500px) {
+  header {
+    padding-left: 5%;
+    padding-right: 5%; }
+    header .leftSide ul {
+      display: none; }
+    header .rightSide #comparison {
+      display: none; }
+    header .rightSide #btn_Cab {
+      display: none; }
+    header .rightSide #num {
+      font-size: 130%; }
+    header #burger {
+      display: flex;
+      margin-left: 5%; }
+    header .burgerMenu {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 90%;
+      margin-bottom: 2%; }
+      header .burgerMenu div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 2%; }
+        header .burgerMenu div #close {
+          width: 4%; }
+      header .burgerMenu ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        list-style: none; }
+        header .burgerMenu ul li {
+          margin-bottom: 20%;
+          font-family: "Vida 31 Pro",sans-serif; }
+          header .burgerMenu ul li a {
+            text-decoration: none;
+            color: #893b67; }
+      header .burgerMenu #comparison {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: auto;
+        margin-left: 2%;
+        margin-top: 10%; }
+        header .burgerMenu #comparison #comprVal {
+          align-items: center;
+          flex-direction: row;
+          margin-right: 10%;
+          justify-content: flex-end; }
+          header .burgerMenu #comparison #comprVal span {
+            position: absolute;
+            align-self: flex-start;
+            font-size: 80%;
+            justify-self: flex-end;
+            background-color: #893b67;
+            color: white;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.8%; }
+          header .burgerMenu #comparison #comprVal img {
+            display: block;
+            color: #893b67;
+            margin: 40%;
+            box-sizing: border-box; }
+        header .burgerMenu #comparison p {
+          font-family: "Vida 31 Pro",sans-serif;
+          color: #893b67;
+          font-size: 90%; }
+      header .burgerMenu #Cab {
+        margin-top: 3%;
+        margin-bottom: 7%;
+        font-family: "Vida 31 Pro";
+        color: #893b67; }
+      header .burgerMenu #callBlock {
+        display: flex;
+        align-content: center;
+        justify-content: flex-start; }
+        header .burgerMenu #callBlock p {
+          font-family: "Vida 33 Pro";
+          color: #565f66;
+          font-size: 180%; }
+        header .burgerMenu #callBlock img {
+          margin-left: 5%;
+          width: 8%; }
+  .bg {
+    overflow: hidden; }
+    .bg img {
+      width: 125%; }
+  .main {
+    display: flex;
+    flex-direction: column; }
+    .main #menu {
+      width: auto; }
+      .main #menu #menuSide {
+        width: 100%; }
+        .main #menu #menuSide a {
+          display: none; }
+        .main #menu #menuSide #notice {
+          width: 90%;
+          margin: 1%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          align-self: center;
+          margin-bottom: 5%; }
+          .main #menu #menuSide #notice div {
+            display: flex;
+            align-items: center;
+            justify-content: space-around; }
+            .main #menu #menuSide #notice div .noticeBarSide {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin: 0%;
+              margin-left: 5%;
+              width: 80%;
+              margin: 0%; }
+              .main #menu #menuSide #notice div .noticeBarSide #noticeBar {
+                display: flex;
+                margin: 1%; }
+              .main #menu #menuSide #notice div .noticeBarSide span {
+                margin: -1%;
+                width: 2.3%;
+                font-size: 60%;
+                font-family: "Vida 33 Pro", sans-serif;
+                padding: 0.5%; }
+            .main #menu #menuSide #notice div img {
+              display: flex; }
+          .main #menu #menuSide #notice .menuSidemini {
+            display: none;
+            flex-direction: column;
+            align-self: center;
+            width: 100%; }
+            .main #menu #menuSide #notice .menuSidemini a {
+              display: flex;
+              margin: 2%;
+              margin-left: 5%; }
+        .main #menu #menuSide .LeftSideBars {
+          display: flex;
+          width: 90%;
+          align-content: center;
+          align-self: center;
+          justify-content: space-between; }
+          .main #menu #menuSide .LeftSideBars #LeftSideBar {
+            margin: 0;
+            width: 40%; }
+    .main #content {
+      border: none;
+      width: 90%;
+      align-self: center;
+      margin-left: 0; }
+      .main #content #MainContent {
+        margin: 0;
+        margin-top: 10%; }
+  hr {
+    display: none; }
+  .undermain article {
+    display: flex; }
+  .undermain .slider {
+    z-index: 9;
+    width: 700px;
+    height: 290px;
+    overflow: hidden;
+    margin: 0 0 7px;
+    position: relative;
+    display: none; }
+    .undermain .slider ul {
+      width: 9999px;
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      .undermain .slider ul li {
+        list-style-type: none;
+        float: left;
+        width: 700px;
+        height: 290px; }
+        .undermain .slider ul li article {
+          display: flex; }
+  footer {
+    margin-top: 0; }
+    footer #rightFooter {
+      flex-wrap: wrap;
+      width: 45%; }
+      footer #rightFooter .slideUl {
+        display: none; }
+      footer #rightFooter ul {
+        margin-top: 10%; }
+    footer #leftFooter {
+      margin-top: 5%;
+      width: 40%; }
+      footer #leftFooter h2 {
+        font-size: 140%; } }
+
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  header {
+    padding-left: 2%;
+    padding-right: 2%; }
+    header .leftSide {
+      width: 35%; }
+      header .leftSide img {
+        width: 90%; }
+      header .leftSide ul {
+        display: none; }
+    header .rightSide #comparison {
+      display: none; }
+    header .rightSide #btn_Cab {
+      display: none; }
+    header .rightSide #num {
+      font-size: 65%; }
+    header .rightSide #call {
+      width: 25%; }
+    header #burger {
+      display: flex;
+      width: 6%; }
+    header .burgerMenu {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 90%;
+      margin-bottom: 2%; }
+      header .burgerMenu div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 2%; }
+        header .burgerMenu div #close {
+          width: 4%; }
+      header .burgerMenu ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        list-style: none; }
+        header .burgerMenu ul li {
+          margin-bottom: 20%;
+          font-family: "Vida 31 Pro",sans-serif; }
+          header .burgerMenu ul li a {
+            text-decoration: none;
+            color: #893b67; }
+      header .burgerMenu #comparison {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: auto;
+        margin-left: 2%;
+        margin-top: 10%; }
+        header .burgerMenu #comparison #comprVal {
+          align-items: center;
+          flex-direction: row;
+          margin-right: 10%;
+          justify-content: flex-end; }
+          header .burgerMenu #comparison #comprVal span {
+            position: absolute;
+            align-self: flex-start;
+            font-size: 80%;
+            justify-self: flex-end;
+            background-color: #893b67;
+            color: white;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4%; }
+          header .burgerMenu #comparison #comprVal img {
+            display: block;
+            color: #893b67;
+            margin: 40%;
+            box-sizing: border-box; }
+        header .burgerMenu #comparison p {
+          font-family: "Vida 31 Pro",sans-serif;
+          color: #893b67;
+          font-size: 90%; }
+      header .burgerMenu #Cab {
+        margin-top: 3%;
+        margin-bottom: 7%;
+        font-family: "Vida 31 Pro";
+        color: #893b67; }
+      header .burgerMenu #callBlock {
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+        padding-top: 5%; }
+        header .burgerMenu #callBlock p {
+          font-family: "Vida 33 Pro";
+          color: #565f66;
+          font-size: 150%; }
+        header .burgerMenu #callBlock img {
+          margin-left: 5%;
+          width: 15%; }
+  .bg {
+    overflow: hidden; }
+    .bg img {
+      width: 150%; }
+    .bg #bgText h1 {
+      font-size: 100%; }
+    .bg #bgText h5 {
+      font-size: 50%;
+      padding: 8%;
+      padding-top: 3%;
+      padding-bottom: 0;
+      width: 50%;
+      align-content: center; }
+  .main {
+    display: flex;
+    flex-direction: column; }
+    .main #menu {
+      width: auto; }
+      .main #menu #menuSide {
+        width: 100%; }
+        .main #menu #menuSide a {
+          display: none; }
+        .main #menu #menuSide #notice {
+          width: 90%;
+          margin: 1%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          align-self: center;
+          margin-bottom: 5%; }
+          .main #menu #menuSide #notice div {
+            display: flex;
+            align-items: center;
+            justify-content: space-around; }
+            .main #menu #menuSide #notice div .noticeBarSide {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin: 0%;
+              margin-left: 5%;
+              width: 80%;
+              margin: 0%; }
+              .main #menu #menuSide #notice div .noticeBarSide #noticeBar {
+                display: flex;
+                margin: 1%; }
+              .main #menu #menuSide #notice div .noticeBarSide span {
+                margin: -1%;
+                width: 4%;
+                font-size: 60%;
+                font-family: "Vida 33 Pro", sans-serif;
+                padding: 1%; }
+            .main #menu #menuSide #notice div img {
+              display: flex; }
+          .main #menu #menuSide #notice .menuSidemini {
+            display: none;
+            flex-direction: column;
+            align-self: center;
+            width: 100%; }
+            .main #menu #menuSide #notice .menuSidemini a {
+              display: flex;
+              margin: 2%;
+              margin-left: 5%; }
+        .main #menu #menuSide .LeftSideBars {
+          display: flex;
+          width: 90%;
+          align-content: center;
+          align-self: center;
+          justify-content: space-between; }
+          .main #menu #menuSide .LeftSideBars #LeftSideBar {
+            margin: 0;
+            width: 47%; }
+            .main #menu #menuSide .LeftSideBars #LeftSideBar h3 {
+              font-size: 100%; }
+            .main #menu #menuSide .LeftSideBars #LeftSideBar div {
+              align-items: center; }
+              .main #menu #menuSide .LeftSideBars #LeftSideBar div p {
+                font-size: 80%; }
+              .main #menu #menuSide .LeftSideBars #LeftSideBar div a {
+                font-size: 80%;
+                align-items: center; }
+                .main #menu #menuSide .LeftSideBars #LeftSideBar div a img {
+                  width: 30%; }
+    .main #content {
+      border: none;
+      width: 90%;
+      align-self: center;
+      margin-left: 0; }
+      .main #content #MainContent {
+        margin: 0;
+        margin-top: 10%; }
+  hr {
+    display: none; }
+  .undermain article {
+    display: none; }
+  .undermain .slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 7px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column; }
+    .undermain .slider .slideUl {
+      display: none; }
+    .undermain .slider ul {
+      width: 400%;
+      margin: 0%;
+      margin-left: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      .undermain .slider ul li {
+        list-style-type: none;
+        float: left;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .undermain .slider ul li article {
+          display: flex;
+          width: 100%; }
+          .undermain .slider ul li article p {
+            width: 100%;
+            display: flex;
+            align-self: center; }
+          .undermain .slider ul li article h5 #activeP {
+            width: 15%; }
+          .undermain .slider ul li article h5 p {
+            width: 15%; }
+    .undermain .slider .nav {
+      align-self: center;
+      display: flex;
+      width: 25%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%; }
+      .undermain .slider .nav span {
+        background: #000000;
+        margin-right: 10%;
+        width: 11px;
+        height: 11px;
+        border-radius: 8px;
+        cursor: pointer;
+        overflow: hidden;
+        display: flex; }
+      .undermain .slider .nav .on {
+        background: #9c9e9e; }
+  footer {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column; }
+    footer #rightFooter {
+      flex-wrap: wrap;
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+      margin-left: 5%;
+      align-items: flex-start;
+      justify-content: space-between; }
+      footer #rightFooter .slideUl {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+        footer #rightFooter .slideUl ul {
+          display: flex; }
+          footer #rightFooter .slideUl ul nav {
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            width: 100%; }
+            footer #rightFooter .slideUl ul nav img {
+              display: flex;
+              margin-right: 10%; }
+          footer #rightFooter .slideUl ul li {
+            display: none; }
+      footer #rightFooter ul {
+        margin-top: 10%;
+        width: 100%;
+        display: none; }
+        footer #rightFooter ul nav {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          margin-right: 5%; }
+          footer #rightFooter ul nav h3 {
+            margin-bottom: 1%; }
+    footer #leftFooter {
+      margin-top: 5%;
+      width: 100%; }
+      footer #leftFooter h2 {
+        font-size: 140%; } }
